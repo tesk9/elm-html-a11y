@@ -372,7 +372,6 @@ import Attributes.Heading as Heading
 import Attributes.Landmark as Landmark
 import Attributes.Role exposing (..)
 import Attributes.Widget as Widget
-import Css
 import Html
 import Html.Attributes exposing (..)
 
@@ -384,17 +383,16 @@ import Html.Attributes exposing (..)
 -}
 invisible : Html.Attribute msg
 invisible =
-    style <|
-        Css.asPairs
-            [ Css.property "clip" "rect(1px, 1px, 1px, 1px)"
-            , Css.position Css.absolute
-            , Css.height (Css.px 1)
-            , Css.width (Css.px 1)
-            , Css.overflow Css.hidden
-            , Css.margin (Css.px -1)
-            , Css.padding Css.zero
-            , Css.border Css.zero
-            ]
+    style
+        [ ( "property", "clip rect(1px, 1px, 1px, 1px)" )
+        , ( "position", "absolute" )
+        , ( "height", "1px" )
+        , ( "width", "1px" )
+        , ( "overflow", "hidden" )
+        , ( "margin", "-1px" )
+        , ( "padding", "0" )
+        , ( "border", "0" )
+        ]
 
 
 {-| Creates aria controls attribute. Pass the unique string id of whatever is being controlled.
