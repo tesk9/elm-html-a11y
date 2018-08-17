@@ -1,3 +1,12 @@
+# WARNING
+
+This package is deprecated!
+
+Please use [Accessible Html](http://package.elm-lang.org/packages/tesk9/accessible-html/latest) instead, unless you're using rtfeldman's [elm-css package](http://package.elm-lang.org/packages/rtfeldman/elm-css/latest).
+
+If you're using elm-css, please use [Accessible Html with CSS](http://package.elm-lang.org/packages/tesk9/accessible-html-with-css/latest).
+
+
 # elm-html-a11y
 ![](https://travis-ci.org/tesk9/elm-html-a11y.svg?branch=master)
 
